@@ -33,6 +33,11 @@ h3 {
     margin: 5px;
 }
 
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+}
 
 /* Header & Footer 
 ------------------------------------*/
@@ -57,10 +62,10 @@ footer div a{
 
 /* Work Experience
 ------------------------------------*/
-#work-exp {
+/* #work-exp {
     padding: 50px;
     
-}
+} */
 .job {
     display: grid;
     column-gap: 50px;
