@@ -8,6 +8,12 @@
 
 /* Global styles 
 ------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
 body {
     background: #FAF3DD;
     margin: 0;
@@ -18,13 +24,12 @@ h1 {
     font-family: "Kode Mono";
     font-weight: 60px;
     font-size: 58px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 0;
 }
 h2 {
     font-family: "Kode Mono";
     font-size: 35px;
-    margin-top: 0px;
+    margin: 0;
 }
 h3 {
     margin-bottom: 15px;
@@ -32,11 +37,22 @@ h3 {
 .company {
     margin: 5px;
 }
-
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
     padding: 50px;
+    overflow: hidden;
+}
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
 }
 
 /* Header & Footer 
@@ -69,7 +85,6 @@ footer div a{
     color: #C8D5B9;
 }
 
-
 /* Work Experience
 ------------------------------------*/
 /* #work-exp {
@@ -101,7 +116,6 @@ footer div a{
 
 /* Images 
 ------------------------------------*/
-#headimg {
-    width: 300px;
-    border-radius: 75px;
+.profile-img {
+    border-radius: 50%;
 }
